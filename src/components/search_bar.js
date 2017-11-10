@@ -8,12 +8,13 @@ class SearchBar extends Component {
     }
     render() {
         return (
-            <div className="search-bar">
+            <form className="search-bar">
                 <input
+                    placeholder="mens not hot..."
                     value={this.state.term}
                     onChange=
                     { event => this.onInputChange(event.target.value)} />
-            </div>
+            </form>
         );
     }
 
